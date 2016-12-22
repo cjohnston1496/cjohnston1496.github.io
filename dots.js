@@ -1,19 +1,5 @@
 $(document).ready(function () {
-
-    function goRight(){
-        document.images['ball1'].style.left = parseInt(document.images['ball1'].style.left)+5 +"px";
-    } 
-
-    function getRandomColor() {
-        var letters = '0123456789ABCDEF';
-        var color = '#';
-        for (var i = 0; i < 6; i++ ) {
-            color += letters[Math.floor(Math.random() * 16)];
-        }
-        return color;
-    }
     
-
     function updateDots() {
         var dot, body, x, y;
 
@@ -24,7 +10,6 @@ $(document).ready(function () {
 
             body = $('body');
 
-            //full width 
             x = Math.floor((body.width() - 24) * Math.random());
             y = Math.floor((body.height() - 24) * Math.random());
             orangeDot.offset({left: x, top: y});

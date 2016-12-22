@@ -10,8 +10,12 @@ img {
 	z-index: 1;
 }
 
+h1 {
+	text-align: center;
+}
+
 .shake {
-	animation: rot 2s linear infinite;
+	animation: rot 2.5s linear infinite;
 	-webkit-animation-iteration-count: infinite;
   	backface-visibility: hidden;
   	
@@ -20,49 +24,49 @@ img {
 .greyDot{
 	text-align: center;
 	margin-top: 20px;
-
-
 }
 
 .container {
+	box-shadow: 0px 0px 15px #D8D8D8;
 	text-align: center;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	height: 60%;
-	width: 60%;
+	height: 70%;
+	width: 40%;
 	background: #D8D8D8;
 	border-radius: 15px;
 	z-index: 2;
 }
+table{
+	margin:	auto;
+}
 
-.blurb {
-	margin: 10%;
+td{
+	height: 100px;
+	width: 100px;	
+}
+
+.row1{
+	border-bottom: 1px solid black;
+}
+
+.row3 {
+	border-top: 1px solid black;
+}
+
+.col1 {
+	border-right: 1px solid black;
+}
+
+.col3 {
+	border-left: 1px solid black;
 }
 
 img:hover {
-	opacity: 50%;
+	opacity: 10%;
 }
-
-/*@keyframes shake {
-  10%, 90% {
-    transform: translate3d(1px, 1px, 0);
-  }
-  
-  20%, 80% {
-    transform: translate3d(0px, -1, -0;);
-  }
-
-  0%, 30%, 50%, 70% {
-    transform: translate3d(-1px, 0px, 0px);
-  }
-
-  40%, 60%, 100% {
-    transform: translate3d(0px, 1, 0;);
-  }
-
-}*/
 
 @keyframes rot {
 	from {
@@ -77,30 +81,11 @@ img:hover {
 	}
 }
 
-/*.shake {
-	display:block;
-	position:relative;
-  
-  	-webkit-animation-name: spaceboots;
-	-webkit-animation-duration: 0.8s;
-	-webkit-transform-origin:50% 50%;
-	-webkit-animation-iteration-count: infinite;
-	-webkit-animation-timing-function: linear;
+@media (max-width: 1000px) {
+  .container {
+    width: 60%
+  }
 }
-
-@-webkit-keyframes spaceboots {
-	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
-	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
-	20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
-	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
-	40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
-	50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
-	60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
-	70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
-	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
-	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
-	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
-}*/
 
 @media (max-width: 600px) {
   .container {
