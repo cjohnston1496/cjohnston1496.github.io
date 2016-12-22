@@ -3,6 +3,15 @@ $(document).ready(function () {
     function goRight(){
         document.images['ball1'].style.left = parseInt(document.images['ball1'].style.left)+5 +"px";
     } 
+
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++ ) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
     
 
     function updateDots() {
@@ -24,7 +33,7 @@ $(document).ready(function () {
 
         }
         if (Math.random() < 0.04) {
-            blueDot = $('<img src="blue.png"></img>');
+            blueDot = $('<img class="shake" src="blue.png"></img>');
 
             blueDot.width(Math.random() * (22 - 10) + 10);
 
@@ -38,7 +47,7 @@ $(document).ready(function () {
         }
         if (Math.random() < 0.05) {
             
-            greyDot = $('<img src="grey.png"></img>');
+            greyDot = $('<img class="shake" src="grey.png"></img>');
 
             greyDot.width(Math.random() * (22 - 10) + 10);
 
