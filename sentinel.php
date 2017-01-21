@@ -1,7 +1,7 @@
 <?php 
 define('DB_NAME', 'form1');
 define('DB_USER', 'root');
-define('DB_PASSWORD', 'tennis123');
+define('DB_PASSWORD', 'root');
 define('DB_HOST', 'localhost');
 
 $link = mysql_connect(DB_HOST, DB_USER, DB_PASSWORD);
