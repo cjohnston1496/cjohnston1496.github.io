@@ -1,5 +1,5 @@
 <?php 
-define('DB_NAME', 'email');
+define('DB_NAME', 'sentinel');
 define('DB_USER', 'root');
 define('DB_PASSWORD', "");
 define('DB_HOST', 'localhost');
@@ -18,12 +18,12 @@ if(!$db_selected) {
 
 echo 'connected';
 
-$value = $_POST['emailIn'];
+// $value = $_POST['emailIn'];
 
-$sql = "INSERT INTO form (email) VALUES ('$value')";
+// $sql = "INSERT INTO form (email) VALUES ('$value')";
 
-if (!msql_query($sql)) {
-	die('Error: '.mysql_error())
-}
- mysql_close();
+// if (!msql_query($sql)) {
+// 	die('Error: '.mysql_error())
+// }
+//  mysql_close();
 ?>
