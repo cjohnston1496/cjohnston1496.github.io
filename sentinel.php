@@ -20,7 +20,7 @@ echo 'connected';
 
 $value = $_POST['emailIn'];
 
-$sql = "INSERT INTO sentinel (email) VALUES ('$value')";
+$sql = "INSERT INTO form (email) VALUES ('$value')";
 
 if (!msql_query($sql)) {
 	die('Error: '.mysql_error())
