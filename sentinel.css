@@ -93,17 +93,24 @@ h2 {
   margin-right: auto;
 }
 
+.bottom {
+  text-align: center;
+}
+
 input {
   border-radius: 5px;
   border: 1px solid #514A46;
   color: gray;
   text-align: center;
   height: 36px;
+}
+
+.email {
   width: 200px;
 }
 
-input:active {
-  color: #514A46;
+.submit {
+  width: 100px;
 }
 
 @media(max-width: 768px){
