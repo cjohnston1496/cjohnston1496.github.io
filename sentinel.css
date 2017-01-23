@@ -72,16 +72,24 @@ h2 {
   margin-top: 20vh;
 }
 
+.bottom-blurb {
+  text-align: center;
+  font-size: 2em;
+  position: relative;
+  margin-top: 10vh;
+}
+
 .form {
   text-align: center;
 }
 
-/*hr{
-
-  height: 10px;
+hr{
+  width: 40%;
   border: 0;
-  box-shadow: 0 10px 10px -10px #8c8b8b inset;
-}*/
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
 
 .imgCont {
   text-align: center;
